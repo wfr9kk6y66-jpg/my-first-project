@@ -1,18 +1,240 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>موقعي الأول</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>موقعي الفخم</title>
+
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{
+font-family:Arial,Tahoma,sans-serif;
+background:#080b12;
+color:white;
+line-height:1.8;
+}
+nav{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 8%;
+background:#0c111b;
+border-bottom:1px solid #252d3d;
+position:sticky;
+top:0;
+z-index:10;
+}
+.logo{
+font-size:25px;
+font-weight:bold;
+color:#f5c76b;
+}
+nav a{
+color:#ddd;
+text-decoration:none;
+margin-right:20px;
+}
+.hero{
+min-height:85vh;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+padding:50px 20px;
+background:
+linear-gradient(135deg,rgba(8,11,18,.92),rgba(15,25,40,.8)),
+url("https://images.unsplash.com/photo-1519608487953-e999c86e7455?auto=format&fit=crop&w=1600&q=80")
+center/cover;
+}
+.hero-content{max-width:850px}
+.badge{
+display:inline-block;
+padding:8px 18px;
+border:1px solid #f5c76b;
+border-radius:30px;
+color:#f5c76b;
+margin-bottom:20px;
+}
+h1{
+font-size:clamp(42px,8vw,75px);
+line-height:1.2;
+margin-bottom:20px;
+}
+h1 span{color:#f5c76b}
+.hero p{
+font-size:20px;
+color:#c5cad4;
+margin-bottom:30px;
+}
+.buttons{
+display:flex;
+gap:15px;
+justify-content:center;
+flex-wrap:wrap;
+}
+.btn{
+display:inline-block;
+padding:14px 28px;
+border-radius:12px;
+text-decoration:none;
+font-weight:bold;
+transition:.3s;
+}
+.primary{
+background:#f5c76b;
+color:#111;
+}
+.secondary{
+border:1px solid #555;
+color:white;
+}
+.btn:hover{transform:translateY(-4px)}
+section{padding:80px 8%}
+.title{text-align:center;margin-bottom:45px}
+.title h2{font-size:38px}
+.title p{color:#9da5b3}
+.cards{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:22px;
+}
+.card{
+background:linear-gradient(145deg,#111827,#0b1019);
+border:1px solid #252e3d;
+border-radius:20px;
+padding:30px;
+text-align:center;
+transition:.3s;
+}
+.card:hover{
+transform:translateY(-8px);
+border-color:#f5c76b;
+}
+.icon{font-size:45px;margin-bottom:15px}
+.card h3{margin-bottom:10px;color:#f5c76b}
+.card p{color:#aeb6c4}
+.about{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:40px;
+align-items:center;
+}
+.about img{
+width:100%;
+border-radius:25px;
+border:1px solid #303949;
+}
+.about h2{font-size:40px;margin-bottom:15px}
+.about p{color:#b4bbc7;margin-bottom:25px}
+.contact{
+text-align:center;
+background:linear-gradient(135deg,#101827,#080b12);
+}
+footer{
+text-align:center;
+padding:30px;
+color:#777f8e;
+border-top:1px solid #252d3d;
+}
+@media(max-width:700px){
+nav{padding:18px 5%}
+nav div:last-child{display:none}
+.about{grid-template-columns:1fr}
+section{padding:60px 6%}
+}
+</style>
 </head>
+
 <body>
 
-  <h1>أهلًا بك في موقعي 👋</h1>
-  <p>هذا أول موقع أصنعه باستخدام GitHub.</p>
+<nav>
+<div class="logo">✦ موقعي</div>
+<div>
+<a href="#home">الرئيسية</a>
+<a href="#services">المميزات</a>
+<a href="#about">عني</a>
+<a href="#contact">تواصل</a>
+</div>
+</nav>
 
-  <button onclick="alert('أحسنت! 🎉')">
-    اضغط هنا
-  </button>
+<section class="hero" id="home">
+<div class="hero-content">
+<div class="badge">✨ مرحباً بك في عالمي</div>
+<h1>أهلاً بك في <span>موقعي الفخم</span> 👋</h1>
+<p>
+موقع عصري وأنيق صممته ليكون واجهتي الرقمية.
+بسيط، سريع، احترافي ومميز.
+</p>
+<div class="buttons">
+<a class="btn primary" href="#services">اكتشف الموقع 🚀</a>
+<a class="btn secondary" href="#contact">تواصل معي</a>
+</div>
+</div>
+</section>
+
+<section id="services">
+<div class="title">
+<h2>ماذا يقدم موقعي؟</h2>
+<p>تصميم احترافي بتفاصيل عصرية</p>
+</div>
+
+<div class="cards">
+<div class="card">
+<div class="icon">⚡</div>
+<h3>سرعة عالية</h3>
+<p>صفحة خفيفة وسريعة تعمل بشكل ممتاز على الهاتف.</p>
+</div>
+
+<div class="card">
+<div class="icon">🎨</div>
+<h3>تصميم فاخر</h3>
+<p>ألوان داكنة ولمسات ذهبية تعطي الموقع مظهراً مميزاً.</p>
+</div>
+
+<div class="card">
+<div class="icon">📱</div>
+<h3>متوافق مع الجوال</h3>
+<p>التصميم مناسب للآيفون وجميع أحجام الشاشات.</p>
+</div>
+
+<div class="card">
+<div class="icon">🚀</div>
+<h3>جاهز للتطوير</h3>
+<p>يمكنك إضافة مشاريع وصور وروابط وأقسام جديدة لاحقاً.</p>
+</div>
+</div>
+</section>
+
+<section id="about">
+<div class="about">
+<img src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=1000&q=80">
+
+<div>
+<h2>نبذة عني ✨</h2>
+<p>
+هذا الموقع هو مشروعي الشخصي الأول على الإنترنت.
+أعمل على تطويره وإضافة أفكار جديدة إليه باستمرار.
+</p>
+<a class="btn primary" href="#contact">تعرف علي أكثر</a>
+</div>
+</div>
+</section>
+
+<section class="contact" id="contact">
+<div class="title">
+<h2>هل تريد التواصل؟</h2>
+<p>يسعدني أن أسمع منك 👋</p>
+</div>
+
+<div class="buttons">
+<a class="btn primary" href="mailto:example@email.com">📧 راسلني</a>
+<a class="btn secondary" href="#home">⬆️ العودة للأعلى</a>
+</div>
+</section>
+
+<footer>
+© 2026 جميع الحقوق محفوظة — موقعي ✦
+</footer>
 
 </body>
 </html>
