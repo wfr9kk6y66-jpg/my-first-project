@@ -3,23 +3,28 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>مشتل الحديقة | منتجاتنا</title>
 
 <style>
-*{box-sizing:border-box;margin:0;padding:0}
+*{
+box-sizing:border-box;
+margin:0;
+padding:0;
+}
 
 body{
 font-family:Arial,Tahoma,sans-serif;
 background:#04150b;
 color:white;
-line-height:1.8
+line-height:1.8;
 }
 
 header{
-padding:28px 18px;
+padding:30px 18px;
 text-align:center;
 background:linear-gradient(135deg,#0b4d28,#062014);
-border-bottom:2px solid #d8ad42
+border-bottom:2px solid #d8ad42;
 }
 
 .logo{
@@ -28,17 +33,24 @@ height:90px;
 border-radius:50%;
 object-fit:cover;
 border:3px solid #e3bd55;
-margin-bottom:10px
+margin-bottom:10px;
 }
 
 header h1{
 font-size:34px;
-color:#ffd85c
+color:#ffd85c;
 }
 
 header p{
 color:#d1ddd5;
-font-size:17px
+font-size:17px;
+}
+
+.engineer{
+color:#ffd85c;
+font-size:19px;
+font-weight:bold;
+margin-top:5px;
 }
 
 nav{
@@ -46,7 +58,7 @@ margin-top:20px;
 display:flex;
 justify-content:center;
 gap:10px;
-flex-wrap:wrap
+flex-wrap:wrap;
 }
 
 nav a{
@@ -54,7 +66,7 @@ color:white;
 text-decoration:none;
 background:#14763a;
 padding:9px 20px;
-border-radius:30px
+border-radius:30px;
 }
 
 .hero{
@@ -64,22 +76,23 @@ align-items:center;
 justify-content:center;
 text-align:center;
 padding:50px 20px;
+
 background:
 linear-gradient(rgba(2,20,10,.72),rgba(2,20,10,.9)),
-url("IMG_1242.jpeg") center/cover
+url("IMG_1242.jpeg") center/cover;
 }
 
 .hero h2{
 font-size:44px;
 color:#ffd85c;
-margin-bottom:15px
+margin-bottom:15px;
 }
 
 .hero p{
 font-size:20px;
 max-width:700px;
 margin:auto auto 25px;
-color:#edf4ef
+color:#edf4ef;
 }
 
 .btn{
@@ -87,37 +100,42 @@ display:inline-block;
 background:linear-gradient(135deg,#1c9149,#11672f);
 color:white;
 text-decoration:none;
-padding:14px 32px;
+padding:14px 28px;
 border-radius:35px;
 font-size:18px;
 font-weight:bold;
-border:1px solid #62c783
+border:1px solid #62c783;
+margin:5px;
+}
+
+.whatsapp{
+background:#168c45;
 }
 
 section{
 max-width:1200px;
 margin:auto;
-padding:60px 18px
+padding:60px 18px;
 }
 
 .title{
 text-align:center;
-margin-bottom:35px
+margin-bottom:35px;
 }
 
 .title h2{
 font-size:32px;
-color:#ffd85c
+color:#ffd85c;
 }
 
 .title p{
-color:#aebfb4
+color:#aebfb4;
 }
 
 .grid{
 display:grid;
 grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-gap:25px
+gap:25px;
 }
 
 .card{
@@ -125,7 +143,7 @@ background:linear-gradient(145deg,#10321e,#07190e);
 border:1px solid #28623e;
 border-radius:24px;
 overflow:hidden;
-box-shadow:0 15px 35px #0007
+box-shadow:0 15px 35px #0007;
 }
 
 .card img{
@@ -133,35 +151,35 @@ width:100%;
 height:240px;
 object-fit:cover;
 display:block;
-background:#0b2415
+background:#0b2415;
 }
 
 .card-content{
-padding:24px
+padding:24px;
 }
 
 .card h3{
 font-size:25px;
 color:white;
-margin-bottom:10px
+margin-bottom:10px;
 }
 
 .card p{
 color:#b9c9bd;
-margin-bottom:12px
+margin-bottom:12px;
 }
 
 .price{
 font-size:28px;
 font-weight:bold;
 color:#ffd34f;
-margin-bottom:18px
+margin-bottom:18px;
 }
 
 .features{
 display:grid;
 grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-gap:20px
+gap:20px;
 }
 
 .feature{
@@ -169,175 +187,367 @@ text-align:center;
 background:#0a2415;
 border:1px solid #28563a;
 border-radius:20px;
-padding:25px
+padding:25px;
 }
 
 .feature span{
-font-size:42px
+font-size:42px;
 }
 
 .feature h3{
 color:#ffd85c;
-margin:8px 0
+margin:8px 0;
 }
 
 .feature p{
-color:#b8c8bd
+color:#b8c8bd;
 }
 
 .contact{
 text-align:center;
 background:linear-gradient(135deg,#0b4325,#06170c);
 border-top:1px solid #285c3b;
-border-bottom:1px solid #285c3b
+border-bottom:1px solid #285c3b;
 }
 
 .contact h2{
 color:#ffd85c;
 font-size:32px;
-margin-bottom:10px
+margin-bottom:10px;
 }
 
 .contact p{
 color:#c7d5cc;
-margin-bottom:22px
+margin-bottom:22px;
 }
 
 footer{
 text-align:center;
 padding:25px;
 background:#020a05;
-color:#91a398
+color:#91a398;
 }
 
 @media(max-width:600px){
-.hero h2{font-size:32px}
-.hero p{font-size:17px}
-header h1{font-size:28px}
+
+.hero h2{
+font-size:32px;
+}
+
+.hero p{
+font-size:17px;
+}
+
+header h1{
+font-size:28px;
+}
+
 }
 </style>
 </head>
 
 <body>
 
+<!-- رأس الموقع -->
+
 <header>
-<img class="logo" src="IMG_1242.jpeg" alt="مشتل الحديقة">
+
+<img class="logo"
+src="IMG_1242.jpeg"
+alt="مشتل الحديقة">
+
 <h1>🌿 مشتل الحديقة</h1>
+
 <p>جمال الطبيعة يبدأ من هنا</p>
+
+<div class="engineer">
+👨‍🌾 مهندس الموقع: علي تليسي
+</div>
 
 <nav>
 <a href="#products">المنتجات</a>
 <a href="#features">لماذا نحن؟</a>
 <a href="#contact">تواصل معنا</a>
 </nav>
+
 </header>
 
+
+<!-- الواجهة الرئيسية -->
+
 <div class="hero">
+
 <div>
+
 <h2>اجعل حديقتك أجمل 🌱</h2>
+
 <p>
 أفضل النباتات والمعشب لتزيين الحدائق والمساحات الخارجية
 بجودة ممتازة ولمسة طبيعية جميلة.
 </p>
-<a class="btn" href="#products">شاهد منتجاتنا</a>
+
+<a class="btn" href="#products">
+شاهد منتجاتنا
+</a>
+
 </div>
+
 </div>
+
+
+<!-- المنتجات -->
 
 <section id="products">
 
 <div class="title">
+
 <h2>🌿 منتجاتنا</h2>
+
 <p>اختر ما يناسب حديقتك</p>
+
 </div>
+
 
 <div class="grid">
 
+
+<!-- المنتج الأول -->
+
 <div class="card">
-<img src="IMG_1242.jpeg"
-alt="معشب طبيعي أمريكي درجة أولى"
-onerror="this.onerror=null;this.src='IMG_1242.jpeg'">
+
+<img
+src="IMG_1242.jpeg"
+alt="معشب طبيعي أمريكي درجة أولى">
 
 <div class="card-content">
-<h3>🌱 معشب طبيعي أمريكي درجة أولى</h3>
-<p>معشب طبيعي أخضر بجودة ممتازة، مناسب للحدائق والمساحات الخارجية.</p>
-<div class="price">4 د.ل</div>
-<a class="btn" href="#contact">اطلب الآن</a>
-</div>
+
+<h3>
+🌱 معشب طبيعي أمريكي درجة أولى
+</h3>
+
+<p>
+معشب طبيعي أخضر بجودة ممتازة،
+مناسب للحدائق والمساحات الخارجية.
+</p>
+
+<div class="price">
+4 د.ل
 </div>
 
+<a
+class="btn whatsapp"
+href="https://wa.me/218911926412?text=السلام عليكم، أريد طلب المعشب الطبيعي الأمريكي"
+target="_blank">
+
+💬 اطلب عبر واتساب
+
+</a>
+
+</div>
+
+</div>
+
+
+<!-- المنتج الثاني -->
+
 <div class="card">
-<img src="https://cdn.shopify.com/s/files/1/0059/8835/2052/products/Emeral_Green_Arborvitae_6_FGT_675x.jpg?v=1629473433"
+
+<img
+src="https://cdn.shopify.com/s/files/1/0059/8835/2052/products/Emeral_Green_Arborvitae_6_FGT_675x.jpg?v=1629473433"
 alt="تويا تركية"
 onerror="this.onerror=null;this.src='IMG_1242.jpeg'">
 
 <div class="card-content">
-<h3>🌲 تويا تركية</h3>
-<p>تويا تركية جميلة ومناسبة لتزيين الحدائق والمداخل والأسوار.</p>
-<div class="price">55 د.ل</div>
-<a class="btn" href="#contact">اطلب الآن</a>
-</div>
+
+<h3>
+🌲 تويا تركية
+</h3>
+
+<p>
+تويا تركية جميلة ومناسبة لتزيين
+الحدائق والمداخل والأسوار.
+</p>
+
+<div class="price">
+55 د.ل
 </div>
 
+<a
+class="btn whatsapp"
+href="https://wa.me/218911926412?text=السلام عليكم، أريد طلب التويا التركية"
+target="_blank">
+
+💬 اطلب عبر واتساب
+
+</a>
+
+</div>
+
+</div>
+
+
+<!-- المنتج الثالث -->
+
 <div class="card">
-<img src="https://www.ondrovyzahrady.cz/assets/publikujeme/zivy-plot/zivy-plot.jpg"
+
+<img
+src="https://www.ondrovyzahrady.cz/assets/publikujeme/zivy-plot/zivy-plot.jpg"
 alt="سياج أخضر عشبي"
 onerror="this.onerror=null;this.src='IMG_1242.jpeg'">
 
 <div class="card-content">
-<h3>🌿 سياج أخضر عشبي</h3>
-<p>لمسة طبيعية أنيقة لتزيين الأسوار والحدائق والمساحات الخارجية.</p>
-<div class="price">حسب المساحة</div>
-<a class="btn" href="#contact">اطلب الآن</a>
+
+<h3>
+🌿 سياج أخضر عشبي
+</h3>
+
+<p>
+لمسة طبيعية أنيقة لتزيين الأسوار
+والحدائق والمساحات الخارجية.
+</p>
+
+<div class="price">
+حسب المساحة
 </div>
+
+<a
+class="btn whatsapp"
+href="https://wa.me/218911926412?text=السلام عليكم، أريد الاستفسار عن السياج الأخضر العشبي"
+target="_blank">
+
+💬 اطلب عبر واتساب
+
+</a>
+
 </div>
 
 </div>
+
+</div>
+
 </section>
+
+
+<!-- لماذا نحن -->
 
 <section id="features">
 
 <div class="title">
-<h2>⭐ لماذا مشتل الحديقة؟</h2>
-<p>نهتم بالجودة والجمال</p>
+
+<h2>
+⭐ لماذا مشتل الحديقة؟
+</h2>
+
+<p>
+نهتم بالجودة والجمال
+</p>
+
 </div>
+
 
 <div class="features">
 
+
 <div class="feature">
+
 <span>🌱</span>
-<h3>جودة ممتازة</h3>
-<p>منتجات مختارة بعناية.</p>
+
+<h3>
+جودة ممتازة
+</h3>
+
+<p>
+منتجات مختارة بعناية.
+</p>
+
 </div>
 
+
 <div class="feature">
+
 <span>💰</span>
-<h3>أسعار مناسبة</h3>
-<p>جودة ممتازة بأسعار منافسة.</p>
+
+<h3>
+أسعار مناسبة
+</h3>
+
+<p>
+جودة ممتازة بأسعار منافسة.
+</p>
+
 </div>
 
+
 <div class="feature">
+
 <span>🌿</span>
-<h3>تنوع كبير</h3>
-<p>خيارات متنوعة لحديقتك.</p>
+
+<h3>
+تنوع كبير
+</h3>
+
+<p>
+خيارات متنوعة لحديقتك.
+</p>
+
 </div>
+
 
 <div class="feature">
+
 <span>🤝</span>
-<h3>خدمة مميزة</h3>
-<p>نساعدك في اختيار المناسب.</p>
+
+<h3>
+خدمة مميزة
+</h3>
+
+<p>
+نساعدك في اختيار المناسب.
+</p>
+
 </div>
 
 </div>
+
 </section>
 
-<section id="contact" class="contact">
-<h2>📞 تواصل معنا</h2>
-<p>للطلب والاستفسار عن المنتجات والأسعار</p>
-<a class="btn" href="#products">شاهد المنتجات</a>
+
+<!-- التواصل -->
+
+<section
+id="contact"
+class="contact">
+
+<h2>
+📞 تواصل معنا
+</h2>
+
+<p>
+للطلب والاستفسار عن المنتجات والأسعار
+</p>
+
+<a
+class="btn whatsapp"
+href="https://wa.me/218911926412?text=السلام عليكم، أريد الاستفسار عن منتجات مشتل الحديقة"
+target="_blank">
+
+💬 تواصل معنا عبر واتساب
+
+</a>
+
 </section>
+
+
+<!-- أسفل الموقع -->
 
 <footer>
+
 © 2026 مشتل الحديقة 🌿
+
+<br>
+
+👨‍🌾 مهندس الموقع: علي تليسي
+
 </footer>
 
 </body>
