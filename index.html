@@ -20,61 +20,105 @@ body{
 }
 
 header{
-  background:linear-gradient(135deg,#092b16,#0d5c2b);
-  padding:25px 20px;
+  background:linear-gradient(135deg,#0b3d24,#06130c);
+  padding:25px 18px;
   text-align:center;
   border-bottom:2px solid #d8a93a;
 }
 
 .logo{
-  font-size:28px;
-  font-weight:bold;
-  color:#ffd66b;
+  width:85px;
+  height:85px;
+  border-radius:50%;
+  object-fit:cover;
+  margin-bottom:10px;
+}
+
+header h1{
+  font-size:34px;
+  color:#ffd866;
+  margin-bottom:5px;
 }
 
 header p{
-  color:#d8e8dc;
-  margin-top:5px;
+  color:#c7d8cd;
+  font-size:17px;
+}
+
+nav{
+  display:flex;
+  justify-content:center;
+  gap:12px;
+  flex-wrap:wrap;
+  margin-top:20px;
+}
+
+nav a{
+  text-decoration:none;
+  color:white;
+  background:#146b36;
+  padding:10px 20px;
+  border-radius:30px;
+  transition:.3s;
+}
+
+nav a:hover{
+  background:#d8a93a;
+  color:#06130c;
 }
 
 .hero{
-  padding:70px 20px;
+  min-height:430px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
   text-align:center;
+  padding:60px 20px;
   background:
-  linear-gradient(rgba(0,30,15,.78),rgba(0,20,10,.92)),
-  url("https://images.unsplash.com/photo-1585320806297-9794b3e4eeae?auto=format&fit=crop&w=1200&q=80");
-  background-size:cover;
-  background-position:center;
+    linear-gradient(rgba(2,18,10,.75),rgba(2,18,10,.9)),
+    url("IMG_1242.jpeg") center/cover;
 }
 
-.hero h1{
-  font-size:42px;
+.hero-content{
+  max-width:800px;
+}
+
+.hero h2{
+  font-size:45px;
+  color:#ffd866;
   margin-bottom:15px;
-  color:#ffd66b;
 }
 
 .hero p{
-  font-size:19px;
-  color:#eee;
-  max-width:650px;
-  margin:auto;
+  font-size:20px;
+  color:#e1ebe4;
+  margin-bottom:25px;
 }
 
 .btn{
   display:inline-block;
-  margin-top:25px;
-  padding:14px 30px;
-  border-radius:30px;
-  background:#e9b949;
-  color:#10200f;
   text-decoration:none;
+  background:linear-gradient(135deg,#1c8b46,#126530);
+  color:white;
+  padding:14px 30px;
+  border-radius:35px;
+  font-size:18px;
   font-weight:bold;
+  border:1px solid #54b979;
+  box-shadow:0 8px 25px rgba(0,0,0,.3);
+  transition:.3s;
 }
 
-.products{
-  padding:55px 18px;
+.btn:hover{
+  transform:translateY(-4px);
+  background:#d8a93a;
+  color:#06130c;
+}
+
+section{
   max-width:1200px;
   margin:auto;
+  padding:60px 18px;
 }
 
 .title{
@@ -84,11 +128,11 @@ header p{
 
 .title h2{
   font-size:32px;
-  color:#ffd66b;
+  color:#ffd866;
 }
 
 .title p{
-  color:#b9c9bd;
+  color:#aebfb4;
 }
 
 .grid{
@@ -98,7 +142,7 @@ header p{
 }
 
 .card{
-  background:linear-gradient(145deg,#102719,#07160d);
+  background:linear-gradient(145deg,#102719,#07180f);
   border:1px solid #285c3b;
   border-radius:22px;
   overflow:hidden;
@@ -115,6 +159,7 @@ header p{
   width:100%;
   height:230px;
   object-fit:cover;
+  display:block;
 }
 
 .card-content{
@@ -122,88 +167,95 @@ header p{
 }
 
 .card h3{
-  font-size:23px;
   color:#fff;
+  font-size:25px;
   margin-bottom:8px;
 }
 
 .card p{
   color:#b9c9bd;
-  min-height:55px;
-}
-
-.price{
-  color:#ffd66b;
-  font-size:24px;
-  font-weight:bold;
-  margin-top:15px;
-}
-
-.order{
-  display:block;
-  text-align:center;
-  margin-top:18px;
-  padding:12px;
-  border-radius:14px;
-  background:#176b35;
-  color:white;
-  text-decoration:none;
-  font-weight:bold;
-}
-
-.about{
-  background:#0a2112;
-  padding:55px 20px;
-  text-align:center;
-}
-
-.about h2{
-  color:#ffd66b;
   margin-bottom:15px;
 }
 
-.about p{
-  max-width:750px;
-  margin:auto;
-  color:#d0ddd4;
+.price{
+  color:#ffd45a;
+  font-size:28px;
+  font-weight:bold;
+  margin-bottom:18px;
 }
 
-.contact{
-  padding:55px 20px;
+.features{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:20px;
+}
+
+.feature{
+  background:#0b2115;
+  border:1px solid #244b32;
+  border-radius:18px;
+  padding:25px;
   text-align:center;
 }
 
-.contact h2{
-  color:#ffd66b;
+.feature .icon{
+  font-size:42px;
   margin-bottom:10px;
 }
 
-.contact a{
-  display:inline-block;
-  margin-top:20px;
-  padding:14px 35px;
-  background:#e9b949;
-  color:#10200f;
-  border-radius:30px;
-  text-decoration:none;
-  font-weight:bold;
+.feature h3{
+  color:#ffd866;
+  margin-bottom:7px;
+}
+
+.feature p{
+  color:#b9c9bd;
+}
+
+.contact{
+  text-align:center;
+  background:linear-gradient(135deg,#0d3b22,#06130c);
+  border-top:1px solid #285c3b;
+  border-bottom:1px solid #285c3b;
+}
+
+.contact h2{
+  color:#ffd866;
+  font-size:32px;
+  margin-bottom:10px;
+}
+
+.contact p{
+  color:#c5d4ca;
+  margin-bottom:22px;
 }
 
 footer{
   text-align:center;
-  padding:25px;
-  background:#041009;
-  color:#87998d;
-  border-top:1px solid #183b25;
+  padding:25px 15px;
+  background:#030b07;
+  color:#8fa196;
 }
 
 @media(max-width:600px){
-  .hero h1{
-    font-size:32px;
+  header h1{
+    font-size:27px;
   }
 
   .hero{
-    padding:55px 18px;
+    min-height:400px;
+  }
+
+  .hero h2{
+    font-size:32px;
+  }
+
+  .hero p{
+    font-size:17px;
+  }
+
+  section{
+    padding:45px 15px;
   }
 }
 </style>
@@ -212,80 +264,126 @@ footer{
 <body>
 
 <header>
-  <div class="logo">🌿 مشتل الحديقة</div>
-  <p>لأن الطبيعة تستحق الأفضل</p>
+  <img class="logo" src="IMG_1242.jpeg" alt="مشتل الحديقة">
+  <h1>🌿 مشتل الحديقة</h1>
+  <p>جمال الطبيعة يبدأ من هنا</p>
+
+  <nav>
+    <a href="#products">المنتجات</a>
+    <a href="#features">لماذا نحن؟</a>
+    <a href="#contact">تواصل معنا</a>
+  </nav>
 </header>
 
-<section class="hero">
-  <h1>منتجاتنا الطبيعية 🌱</h1>
-  <p>
-    أجود أنواع المعشب والنباتات والسياج الأخضر
-    لتجعل حديقتك أجمل وأكثر أناقة.
-  </p>
-  <a href="#products" class="btn">🚀 اكتشف المنتجات</a>
-</section>
+<div class="hero">
+  <div class="hero-content">
+    <h2>اجعل حديقتك أجمل 🌱</h2>
+    <p>
+      نوفر لك أجود أنواع المعشب والنباتات لتزيين الحدائق
+      والمساحات الخارجية بأجمل شكل.
+    </p>
+    <a class="btn" href="#products">شاهد منتجاتنا</a>
+  </div>
+</div>
 
-<section class="products" id="products">
+<section id="products">
 
   <div class="title">
-    <h2>منتجاتنا</h2>
+    <h2>🌿 منتجاتنا</h2>
     <p>اختر ما يناسب حديقتك</p>
   </div>
 
   <div class="grid">
 
-    <!-- المنتج الأول -->
     <div class="card">
-      <img src="https://images.unsplash.com/photo-1584735175315-9d5df23860e6?auto=format&fit=crop&w=900&q=80" alt="معشب طبيعي">
+      <img src="IMG_1242.jpeg" alt="معشب طبيعي">
       <div class="card-content">
         <h3>🌱 معشب طبيعي أمريكي درجة أولى</h3>
-        <p>معشب طبيعي أخضر بجودة ممتازة، مناسب للحدائق والمساحات الخارجية.</p>
+        <p>
+          معشب طبيعي أخضر بجودة ممتازة، مناسب للحدائق
+          والمساحات الخارجية.
+        </p>
         <div class="price">4 د.ل</div>
-        <a href="#contact" class="order">اطلب الآن</a>
+        <a class="btn" href="#contact">اطلب الآن</a>
       </div>
     </div>
 
-    <!-- المنتج الثاني -->
     <div class="card">
-      <img src="https://images.unsplash.com/photo-1599685315640-7aab0d1f2a2b?auto=format&fit=crop&w=900&q=80" alt="تويا تركية">
+      <img src="IMG_1242.jpeg" alt="تويا تركية">
       <div class="card-content">
         <h3>🌲 تويا تركية</h3>
-        <p>نبات تويا تركية جميلة ومناسبة لتزيين الحدائق والمداخل.</p>
+        <p>
+          نبات تويا تركية جميلة ومناسبة لتزيين الحدائق
+          والمداخل.
+        </p>
         <div class="price">55 د.ل</div>
-        <a href="#contact" class="order">اطلب الآن</a>
+        <a class="btn" href="#contact">اطلب الآن</a>
       </div>
     </div>
 
-    <!-- المنتج الثالث -->
     <div class="card">
-      <img src="https://images.unsplash.com/photo-1558904541-efa843a96f01?auto=format&fit=crop&w=900&q=80" alt="السياج الأخضر العشبي">
+      <img src="IMG_1242.jpeg" alt="سياج أخضر عشبي">
       <div class="card-content">
-        <h3>🌿 السياج الأخضر العشبي</h3>
-        <p>سياج أخضر أنيق للحدائق والمنازل والمزارع، والسعر حسب المساحة.</p>
-        <div class="price">السعر حسب المساحة</div>
-        <a href="#contact" class="order">اطلب الآن</a>
+        <h3>🌿 سياج أخضر عشبي</h3>
+        <p>
+          حل جميل لتزيين الأسوار والحدائق وإضافة لمسة
+          طبيعية للمكان.
+        </p>
+        <div class="price">حسب المساحة</div>
+        <a class="btn" href="#contact">اطلب الآن</a>
       </div>
     </div>
 
   </div>
 </section>
 
-<section class="about">
-  <h2>✨ لماذا نحن؟</h2>
-  <p>
-    نهتم بتوفير منتجات نباتية جميلة وعالية الجودة
-    لتمنح حديقتك مظهراً طبيعياً وأنيقاً.
-  </p>
+<section id="features">
+
+  <div class="title">
+    <h2>⭐ لماذا مشتل الحديقة؟</h2>
+    <p>نهتم بالجودة والجمال</p>
+  </div>
+
+  <div class="features">
+
+    <div class="feature">
+      <div class="icon">🌱</div>
+      <h3>جودة ممتازة</h3>
+      <p>نختار منتجاتنا بعناية لتناسب حدائقكم.</p>
+    </div>
+
+    <div class="feature">
+      <div class="icon">💰</div>
+      <h3>أسعار مناسبة</h3>
+      <p>أسعار منافسة وجودة تستحق الثقة.</p>
+    </div>
+
+    <div class="feature">
+      <div class="icon">🌿</div>
+      <h3>تنوع المنتجات</h3>
+      <p>خيارات متنوعة لتنسيق حديقتك بالشكل الذي تحبه.</p>
+    </div>
+
+    <div class="feature">
+      <div class="icon">🤝</div>
+      <h3>خدمة مميزة</h3>
+      <p>نساعدك في اختيار ما يناسب مساحتك.</p>
+    </div>
+
+  </div>
 </section>
 
-<section class="contact" id="contact">
+<section id="contact" class="contact">
   <h2>📞 تواصل معنا</h2>
   <p>للطلب والاستفسار عن المنتجات والأسعار</p>
-  <a href="tel:0000000000">اتصل بنا</a>
+
+  <a class="btn" href="tel:+218000000000">
+    اتصل بنا الآن
+  </a>
 </section>
 
 <footer>
-  © 2026 مشتل الحديقة — جميع الحقوق محفوظة 🌿
+  <p>© 2026 مشتل الحديقة — جميع الحقوق محفوظة 🌿</p>
 </footer>
 
 </body>
